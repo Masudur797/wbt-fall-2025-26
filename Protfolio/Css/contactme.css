@@ -6,17 +6,14 @@ body {
   margin: 20px;
 }
 
-
 h1, h2, h3 {
-  color:#0077b6;
+  color: #0077b6;
 }
-
 
 p {
   font-size: 16px;
-  color: #33;
+  color: #333;
 }
-
 
 a {
   color: #ff6600;
@@ -27,27 +24,41 @@ a:hover {
   text-decoration: underline;
 }
 
-
 form {
-  background-color: #e1ede481;
+  text-align: left;
+  background-color: #c6d9cb81;
   padding: 20px;
   border-radius: 20px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
-input[type="text"], input[type="email"], input[type="date"],
- select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 1px solid #0077b6;
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.row label {
+  width: 40%;
+  font-weight: bold;
+}
+
+.row input,
+.row select {
+  width: 55%;
+  padding: 7px;
+  border: 1px solid #0f3d56;
   border-radius: 5px;
 }
 
-input[type="submit"], input[type="reset"]
- {
-  background-color: #0077b6;
+
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #021f2f;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -56,6 +67,17 @@ input[type="submit"], input[type="reset"]
   cursor: pointer;
 }
 
-input[type="submit"]:hover,      input[type="reset"]:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
   background-color: #98a2b0;
+}
+
+
+
+select {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #0f3d56;
+  border-radius: 5px;
+  margin-top: 5px;
 }

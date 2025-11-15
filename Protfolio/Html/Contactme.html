@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <title>Contact Me</title>
   <link rel="stylesheet" href="../Css/contactme.css">
-
 </head>
+
 <body>
 
   <h1>Contact Me</h1>
@@ -23,45 +22,68 @@
 
   <h3>Contact Form</h3>
 
+  
   <form method="GET">
 
-    First Name:<br>
-    <input type="text" name="firstname" required><br><br>
+    <div class="row">
+      <label>First Name:</label>
+      <input type="text" name="firstname" required>
+    </div>
 
-    Last Name:<br>
-    <input type="text" name="lastname" required><br><br>
+    <div class="row">
+      <label>Last Name:</label>
+      <input type="text" name="lastname" required>
+    </div>
 
-    Email:<br>
-    <input type="email" name="email" required><br><br>
+    <div class="row">
+      <label>Email:</label>
+      <input type="email" name="email" required>
+    </div>
 
-    Company (optional):<br>
-    <input type="text" name="company"><br><br>
+    <div class="row">
+      <label>Phone:</label>
+      <input type="text" name="phone">
+    </div>
 
-    Reason for Contact:<br><br>
+    <div class="row">
+      <label>Company:</label>
+      <input type="text" name="company">
+    </div>
 
-    
+    <div class="row">
+      <label>Preferred Date:</label>
+      <input type="date" name="contactdate">
+    </div>
+
+    <br>
+    <b>Reason for Contact:</b><br><br>
+
+   
     <input type="radio" name="reason" value="Project" required> Project<br>
     <select name="project">
       <option>Database System</option>
       <option>Portfolio Website</option>
       <option>Super Shop Management</option>
-    </select><br><br>
+    </select>
+    <br><br>
 
-   
+    
     <input type="radio" name="reason" value="Thesis"> Thesis<br>
     <select name="thesis">
       <option>Solar Management System</option>
       <option>App Development Benefit</option>
       <option>Cloud Security Framework</option>
-    </select><br><br>
+    </select>
+    <br><br>
 
     
     <input type="radio" name="reason" value="Job"> Job<br>
-    <select name="job"</select>
+    <select name="job">
       <option>Pran Company Engineering</option>
       <option>My Dream797 IT Sector</option>
       <option>Apple Company</option>
-    </select><br><br>
+    </select>
+    <br><br>
 
     Book an Appointment:<br>
     <input type="date" name="appointment"><br><br>
@@ -70,6 +92,7 @@
     <input type="reset" value="Reset">
 
   </form>
+  
 
   <p><a href="../index.html">← Back to Home</a></p>
 
