@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PRSCTICE PORM</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+
+<h1>****************FORM****************************</h1>
+
+<form method="GET">
+
+    <!-- Text Inputs -->
+    Full Name: <input type="text" name="fullname" required><br><br>
+    Nickname :<input type="text" name ="firstname"required><br><br>
+    Email: <input type="email" name="email" required><br><br>
+    address:<input type="home" name="home"required><br><br>
+    Phone: <input type="number" name="phone"><br><br>
+    Password: <input type="password" name="password"><br><br>
+    sport:<input type="text"name="play"required> <br><br>
+    relation ship:<input type="text" name="marred"required><br><br>
+
+    <!-- Radio Buttons -->
+    Gender:<br>
+    <input type="radio" name="gender"> Male<br>
+    <input type="radio" name="gender"> Female<br>
+    <input type="radio" name="gender"> Other<br>
+    <input type="radio"name="gender">3nd<br>
+    <input type="radio"name="gender">my self<br><br>
+
+Education:<br>
+<input type="radio" name="education"> SSC
+<input type="radio" name="education"> HSC
+<input type="radio" name="education"> Bachelor
+<input type="radio" name="education"> Masters
+<br><br>
+
+Contact:<br>
+<input type="radio" name="contact"> Email<br>
+<input type="radio" name="contact"> Phone<br>
+<input type="radio" name="contact"> SMS<br><br>
+
+
+
+    <!-- Checkbox -->
+    Your Skills:<br>
+    <input type="checkbox" name="skill"> HTML<br>
+    <input type="checkbox" name="skill"> CSS<br>
+    <input type="checkbox" name="skill"> JavaScript<br>
+    <input type="checkbox" name="skill"> Python<br><br>
+
+   Hobbies:<br>
+<input type="checkbox"> Reading  
+<input type="checkbox"> Gaming  
+<input type="checkbox"> Traveling  
+<input type="checkbox"> Cooking  <br><br>
+
+
+
+    <!-- Dropdown -->
+    Select Country:
+    <select name="country">
+        <option>Bangladesh</option>
+        <option>India</option>
+        <option>USA</option>
+        <option>Canada</option>
+        <option>Japan</option>
+    </select>
+    <br><br>
+
+skill:
+<select name="skill">
+<option>Html</option>
+<option>Css</option>
+<option>js</option>
+</select>
+
+Development:
+<select name="Department">
+  <option>Select Department</option>
+  <option>CSE</option>
+  <option>EEE</option>
+  <option>BBA</option>
+  <option>English</option>
+  <option>Civil</option>
+</select><br><br>
+
+
+
+
+    <!-- Date -->
+    Date of Birth:
+    <input type="date" name="date of birth"><br><br>
+
+<!--another way day month year using Dropdown-->
+
+<select name="day">
+  <option>1</option>
+  <option>2</option>
+  <option>31</option>
+</select>
+
+<select name="month">
+  <option>January</option>
+  <option>February</option>
+  <option>December</option>
+</select>
+
+
+<select name="year">
+  <option>2000</option>
+  <option>2001</option>
+  <option>2025</option>
+</select>
+<br><br>
+
+
+    <!-- File Upload -->
+Upload Photo: <input type="file" name="photo"><br><br>
+
+
+File Multiple:<input type="file" name="files" multiple><br><br>
+
+<!-- শুধু ছবি আপলোড করা যাবে -->
+Only photo:<input type="file" name="photo" accept="image/*">
+
+<!-- শুধু পিডিএফ আপলোড -->
+Only document:<input type="file" name="document" accept=".pdf">
+<br><br>
+
+
+
+
+
+    <!-- Textarea -->
+    Write Yourself:<br>
+    <textarea name="bio" rows="5" cols="40"></textarea><br><br>
+ 
+
+me:<br>
+<textarea name="message" rows="5" cols="40" required></textarea>
+<br>
+
+
+    <!-- Color Picker -->
+    Choose Color:  
+    <input type="color" name="color"><br><br>
+
+
+    <!-- Range Slider -->
+    Experience Level (0-10):  
+    <input type="range" min="0" max="10" name="exp"><br><br>
+
+
+<table border="1">
+<caption><strong>Table</strong></caption>
+
+    <!-- Table Header -->
+
+    <tr>
+        <th>Programming Language</th>
+        <th>Tool</th>
+        <th>Experience Level</th>
+    </tr>
+
+    <!-- Table Rows -->
+    <tr>
+        <td>Python</td>
+        <td>VS Code</td>
+        <td>Intermediate</td>
+    </tr>
+    <tr>
+        <td>Java</td>
+        <td>IntelliJ IDEA</td>
+        <td>Intermediate</td>
+    </tr>
+    <tr>
+        <td>HTML & CSS</td>
+        <td>VS Code</td>
+        <td>Beginner</td>
+    </tr>
+    <tr>
+        <td>JavaScript</td>
+        <td>Chrome DevTools</td>
+        <td>Beginner</td>
+    </tr>
+    <tr>
+        <td>C++</td>
+        <td>Code::Blocks</td>
+        <td>Intermediate</td>
+    </tr>
+</table>
+
+<br><br>
+
+
+
+<h1>My Academic Projects</h1>
+
+<table border="5" cellpadding="5" cellspacing="0">
+    <!-- Table Caption -->
+    <caption><b>Table</b></caption>
+
+    <!-- Table Header -->
+    <thead>
+        <tr>
+            <th>Project Name</th>
+            <th>Subject</th>
+            <th>Year Completed</th>
+            <th>Tools Used</th>
+            <th>Remarks</th>
+        </tr>
+    </thead>
+
+    <!-- Table Body -->
+    <tbody>
+        <tr>
+            <td>Bank Management System</td>
+            <td>Java</td>
+            <td>2022</td>
+            <td>IntelliJ IDEA</td>
+            <td>Good Performance</td>
+        </tr>
+        <tr>
+            <td>Chat Application</td>
+            <td>C++</td>
+            <td>2021</td>
+            <td>Code::Blocks</td>
+            <td>Completed Successfully</td>
+        </tr>
+        <tr>
+            <td>E-Book Website</td>
+            <td>Web Development</td>
+            <td>2023</td>
+            <td>VS Code, HTML, CSS, JS</td>
+            <td>Working Prototype</td>
+        </tr>
+        <tr>
+            <td>Solar Management System</td>
+            <td>EEE</td>
+            <td>2021</td>
+            <td>Proteus, Multisim</td>
+            <td>2nd Position in Competition</td>
+        </tr>
+    </tbody>
+
+    <!-- Table Footer -->
+    <tfoot>
+        <tr>
+            <td colspan="4"><b>Total Projects</b></td>
+            <td>4</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<br><br>
+
+
+
+    <!-- Submit & Reset -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<style>
+
+/* Page Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 20px;
+}
+
+/* Heading Style */
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form Style */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    width: 70%;
+    margin: auto;
+}
+
+/* Input Box Style */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="home"],
+select,
+textarea {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 5px;
+}
+
+/* File Upload */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* Submit & Reset Button */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="reset"] {
+    background-color: #d9534f;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"]:hover {
+    background-color: #c9302c;
+}
+
+/* TEXTAREA Style */
+textarea {
+    resize: none;
+}
+
+/* Tables */
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+caption {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Experience Table Footer */
+tfoot td {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+</style>
