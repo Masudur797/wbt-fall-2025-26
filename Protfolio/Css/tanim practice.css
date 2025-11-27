@@ -1,30 +1,33 @@
 <style>
 
 /* Page Style */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    font-family:Arial, Helvetica, sans-serif, sans-serif,'Times New Roman', Times, serif;
+    background-color: y#15243e;
     padding: 20px;
 }
 
 /* Heading Style */
+
 h1, h2, h3 {
     text-align: center;
-    color: #333;
+    color: #03092d;
 }
 
 /* Form Style */
+
 form {
-    background: white;
-    padding: 20px;
+    background: rgba(209, 198, 193, 0.888);
+    padding: 10px;
     border-radius: 10px;
-    border: 2px solid #ccc;
+    border: 2px solid #1e1212;
     width: 70%;
-    margin: auto;
+    margin:auto;
 }
 
 /* Input Box Style */
-input[type="text"],
+input[type="texT"],
 input[type="email"],
 input[type="password"],
 input[type="number"],
@@ -32,10 +35,10 @@ input[type="date"],
 input[type="home"],
 select,
 textarea {
-    width: 95%;
-    padding: 8px;
+    width: 50%;
+    padding: 7px;
     margin-top: 5px;
-    border: 1px solid #aaa;
+    border: 1px solid #2d0d0d;
     border-radius: 5px;
 }
 
@@ -52,51 +55,47 @@ input[type="file"] {
 
 /* Submit & Reset Button */
 input[type="submit"],
-input[type="reset"] {
-    background-color: #4CAF50;
-    color: white;
+input[type="reset"]{
+    background-color: #108312;
+    color: rgb(235, 233, 233);
     border: none;
-    padding: 10px 15px;
+    padding: 10px 100px;
     margin: 10px;
     border-radius: 5px;
-    cursor: pointer;
+    cursor:pointer;
     font-size: 16px;
 }
 
-input[type="reset"] {
-    background-color: #d9534f;
-}
-
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #679f68;
 }
 
 input[type="reset"]:hover {
-    background-color: #c9302c;
+    background-color: #a87977;
 }
 
 /* TEXTAREA Style */
 textarea {
-    resize: none;
+    resize:none;
 }
 
 /* Tables */
 table {
     width: 95%;
     margin: 20px auto;
-    border-collapse: collapse;
-    background-color: white;
+    border-collapse:collapse;
+    background-color: rgb(210, 196, 196);
 }
 
 th, td {
-    border: 1px solid #999;
+    border: 1px solid #2c0606;
     padding: 10px;
     text-align: center;
 }
 
 th {
-    background-color: #333;
-    color: white;
+    background-color: #ab3838;
+    color: rgb(249, 247, 247);
 }
 
 caption {
@@ -107,7 +106,7 @@ caption {
 
 /* Experience Table Footer */
 tfoot td {
-    background-color: #f0f0f0;
+    background-color: #c17979;
     font-weight: bold;
 }
 
