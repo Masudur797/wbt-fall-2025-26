@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tanim Calculator</title>
+
+    <style>
+        body {
+            background: #0d0d0d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial;
+        }
+
+        .calculator {
+            background: #1d1f21;
+            width: 380px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.8);
+        }
+
+        .display {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 20px;
+            background: #000;
+            color: #00ff88;
+            font-size: 36px;
+            text-align: right;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: inset 0 0 10px #000;
+        }
+
+        .btn-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        button {
+            height: 60px;
+            font-size: 22px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.2s;
+            font-weight: bold;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .num {
+            background: #333;
+            color: #fff;
+        }
+
+        .num:hover {
+            background: #444;
+        }
+
+        .func {
+            background: #555;
+            color: #fff;
+        }
+
+        .func:hover {
+            background: #666;
+        }
+
+        .operator {
+            background: #ff9500;
+            color: white;
+        }
+
+        .operator:hover {
+            background: #e08a00;
+        }
+
+        .equal {
+            background: #34c759;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .equal:hover {
+            background: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <input type="text" class="display" id="display" disabled>
+
+    <div class="btn-container">
+
+        <!-- TOP FUNCTION ROW -->
+        <button class="func" onclick="clearDisplay()">C</button>
+        <button class="func" onclick="backspace()">⌫</button>
+        <button class="func" onclick="sqrt()">√</button>
+        <button class="operator" onclick="add('/')">÷</button>
+
+        <!-- NUMBERS 7 8 9 -->
+        <button class="num" onclick="add('7')">7</button>
+        <button class="num" onclick="add('8')">8</button>
+        <button class="num" onclick="add('9')">9</button>
+        <button class="operator" onclick="add('*')">×</button>
+
+        <!-- NUMBERS 4 5 6 -->
+        <button class="num" onclick="add('4')">4</button>
+        <button class="num" onclick="add('5')">5</button>
+        <button class="num" onclick="add('6')">6</button>
+        <button class="operator" onclick="add('-')">−</button>
+
+        <!-- NUMBERS 1 2 3 -->
+        <button class="num" onclick="add('1')">1</button>
+        <button class="num" onclick="add('2')">2</button>
+        <button class="num" onclick="add('3')">3</button>
+        <button class="operator" onclick="add('+')">+</button>
+
+        <!-- LAST ROW: %, 0, ., = -->
+        <button class="func" onclick="add('%')">%</button>
+        <button class="num" onclick="add('0')">0</button>
+        <button class="num" onclick="add('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+
+    </div>
+</div>
+
+<script>
+    let display = document.getElementById("display");
+
+    function add(value) {
+        display.value += value;
+    }
+
+    function clearDisplay() {
+        display.value = "";
+    }
+
+    function backspace() {
+        display.value = display.value.slice(0, -1);
+    }
+
+    function calculate() {
+        try {
+            display.value = eval(display.value);
+        } catch {
+            display.value = "Error";
+        }
+    }
+
+    function sqrt() {
+        display.value = Math.sqrt(display.value);
+    }
+</script>
+
+</body>
+</html>
