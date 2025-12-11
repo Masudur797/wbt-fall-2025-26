@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Beginner Practice</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f2f2f2; }
+    h2 { color: #0077b6; }
+    button { margin: 5px; padding: 8px 12px; cursor: pointer; }
+    input { padding: 5px; margin: 5px; }
+    .box { background: #fff; padding: 10px; margin: 10px 0; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+<h1>JavaScript Beginner Practice</h1>
+
+<div class="box">
+  <h2>1. Click Button → Text Change</h2>
+  <p id="text1">Hello</p>
+  <button onclick="changeText()">Click Me</button>
+</div>
+
+<div class="box">
+  <h2>2. Add Two Numbers</h2>
+  <input type="number" id="num1"> +
+  <input type="number" id="num2">
+  <button onclick="addNumbers()">Add</button>
+  <p id="resultAdd"></p>
+</div>
+
+<div class="box">
+  <h2>3. Simple Alert</h2>
+  <button onclick="showAlert()">Click Me</button>
+</div>
+
+<div class="box">
+  <h2>4. Multiply Two Numbers</h2>
+  <input type="number" id="mul1"> ×
+  <input type="number" id="mul2">
+  <button onclick="multiplyNumbers()">Multiply</button>
+  <p id="resultMul"></p>
+</div>
+
+<div class="box">
+  <h2>5. Change Background Color</h2>
+  <button onclick="changeBg()">Change BG Color</button>
+</div>
+
+<div class="box">
+  <h2>6. Hide/Show Element</h2>
+  <p id="toggleText">I can be hidden or shown!</p>
+  <button onclick="toggleElement()">Toggle</button>
+</div>
+
+<div class="box">
+  <h2>7. Simple Counter</h2>
+  <p>Counter: <span id="counterValue">0</span></p>
+  <button onclick="increase()">Increase</button>
+  <button onclick="decrease()">Decrease</button>
+</div>
+
+<div class="box">
+  <h2>8. Validate Input</h2>
+  <input type="text" id="validateInput">
+  <button onclick="validateField()">Submit</button>
+</div>
+
+<div class="box">
+  <h2>9. Random Number Generator</h2>
+  <button onclick="randomNumber()">Generate Random Number</button>
+  <p id="randomResult"></p>
+</div>
+
+<div class="box">
+  <h2>10. Toggle Text Color</h2>
+  <p id="colorText">Change my color!</p>
+  <button onclick="toggleColor()">Toggle Color</button>
+</div>
+
+<script>
+// 1. Change text
+function changeText() {
+  document.getElementById("text1").innerHTML = "You clicked the button!";
+}
+
+// 2. Add two numbers
+function addNumbers() {
+  let a = Number(document.getElementById("num1").value);
+  let b = Number(document.getElementById("num2").value);
+  document.getElementById("resultAdd").innerText = a + b;
+}
+
+// 3. Alert
+function showAlert() {
+  alert("Hello from JS!");
+}
+
+// 4. Multiply two numbers
+function multiplyNumbers() {
+  let a = Number(document.getElementById("mul1").value);
+  let b = Number(document.getElementById("mul2").value);
+  document.getElementById("resultMul").innerText = a * b;
+}
+
+// 5. Change background color
+function changeBg() {
+  document.body.style.backgroundColor = "#ffdd57";
+}
+
+// 6. Hide/Show element
+function toggleElement() {
+  let el = document.getElementById("toggleText");
+  if (el.style.display === "none") {
+    el.style.display = "block";
+  } else {
+    el.style.display = "none";
+  }
+}
+
+// 7. Counter
+let counter = 0;
+function increase() {
+  counter++;
+  document.getElementById("counterValue").innerText = counter;
+}
+function decrease() {
+  counter--;
+  document.getElementById("counterValue").innerText = counter;
+}
+
+// 8. Validate input
+function validateField() {
+  let input = document.getElementById("validateInput").value.trim();
+  if (input === "") {
+    alert("Please enter something!");
+  } else {
+    alert("Thank you!");
+  }
+}
+
+// 9. Random number
+function randomNumber() {
+  let rand = Math.floor(Math.random() * 100) + 1;
+  document.getElementById("randomResult").innerText = rand;
+}
+
+// 10. Toggle text color
+let colorFlag = true;
+function toggleColor() {
+  let el = document.getElementById("colorText");
+  if (colorFlag) {
+    el.style.color = "red";
+  } else {
+    el.style.color = "blue";
+  }
+  colorFlag = !colorFlag;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
